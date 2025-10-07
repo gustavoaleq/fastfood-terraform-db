@@ -18,7 +18,7 @@ variable "db_username" {
 variable "db_password" {
   description = "Senha do banco RDS"
   type        = string
-  sensitive   = true
+#  sensitive   = true
 }
 
 variable "db_name" {
