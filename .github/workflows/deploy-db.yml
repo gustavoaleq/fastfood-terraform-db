@@ -39,7 +39,7 @@ jobs:
           terraform plan \
             -var="db_username=${{ secrets.DB_USERNAME }}" \
             -var="db_password=${{ secrets.DB_PASSWORD }}"
-            
+
       - name: Terraform Apply
         if: github.ref == 'refs/heads/main'
         run: |
@@ -47,4 +47,4 @@ jobs:
             -var="db_username=${{ secrets.DB_USERNAME }}" \
             -var="db_password=${{ secrets.DB_PASSWORD }}"
         
-          #.
+#
